@@ -1,0 +1,138 @@
+<!DOCTYPE html>  <!--it means its a html doc -->
+<html lang="en">
+<head>
+    <!-- meta tags are used for SEO -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for more accessiblity in terms of size of device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>This is Title</title>
+
+    <!-- this is how you include external css -->
+    <link rel="stylesheet" href="ruchi.css">
+    <!-- this is how you include js file -->
+    <script src="ruchi.js"></script>
+</head>
+<body>
+    <!-- use header where header is required for a better SEO experience-->
+    <h1>Ruchi</h1>
+    <h2>Ruchi</h2>
+    <h3>Ruchi</h3>
+    <h4>Ruchi</h4>
+    <h5>Ruchi</h5>
+    <h6>Ruchi</h6>
+    <!-- strong will make it dark and em will make italic, br is self closing that'll be used for closing, hr makes horizontal ruler -->
+    <!-- Lorem23 for 23 words dummy text -->
+    <p>Lorem ipsum dolor, <strong>this is weak</strong> odit quo. Harum <em>try</em> velit . Id  doloribus tempore a assumenda. Nulla, <br> ipsum dolor sit.</p>
+    <hr>
+    <!-- anchor tag is used for attaching links and target attribute let's you keep the redirect page otherwise link opens in the new tab -->
+    <a href="https://google.com" target="_blank">Google</a><br>
+    <a href="https://facebook.com" target="_blank">facebook</a><br>
+    <a href="https://twitter.com" target="_blank">twitter</a><br>
+    <a href="tut5.html" target="_blank">tut5</a><br>
+    <!-- alt tells you, in case the image isn't loaded then what alternative should be shown -->
+    <img src="https://www.billboard.com/wp-content/uploads/2023/03/18-Taylor-Swift-The-Eras-Tour-opening-night-billboard-1548.jpg?w=942&h=623&crop=1&resize=300%2C198" alt="error loading ">
+
+    <!-- ordered list (ol) will give you numbering based table and ul will give you bullet points -->
+    <ul>
+        <li>This is first item of my unordered list</li>
+        <li>This is second item of my unordered list</li>
+        <li>This is third item of my unordered list</li>
+
+    </ul>
+    
+    <ul>
+        <ol>
+            <li>This is first item of my unordered list</li>
+            <li>This is second item of my unordered list</li>
+            <li>This is third item of my unordered list</li>
+        </ol>
+
+    </ul>
+
+    <!-- tables -->
+    <h3>HTML Table</h3>
+    <table>
+        <thead>
+            <tr> 
+                <th>Name</th>
+                <th>Employ id</th>
+                <th>Employ Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- column 1 -->
+            <tr>
+                <td> Ruchi </td>
+                <td> 345 </td>
+                <td> Programmer </td>
+            </tr>
+            <!-- column 2 -->
+            <tr>
+                <td> Monika </td>
+                <td> 567 </td>
+                <td> Sleeper </td>
+            </tr>
+            <!-- column 3 -->
+            <tr>
+                <td> parisha </td>
+                <td> 341 </td>
+                <td> noveller </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>This is HTML forms tutorial</h2>
+    <!-- sends all the form data to backend.php -->
+    <form action="backend.php">
+
+        <!-- helps you select the column you have chosen to write, here it'll be implemented on tag with name -->
+        <label for="name">Name</label>
+
+        <!-- use div for new line, avoid using br, div just divides do the in-line arrangement -->
+        <div>
+            <input type="text" name="name">
+        </div>
+        <!-- name gives you a way for backend to access this info -->
+        <div>
+            email: <input type="email" name ="myEmail">
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligiblity">
+        </div>
+        <!-- to be able to select only one option out of all the options -->
+        Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+
+        <label for="car">Car</label>
+        <select name="myCar" id="car">
+            <option value="ind">Indica</option>
+            <!-- default value is swift, because of selected keyword -->
+            <option value="swf" selected>Swift</option> 
+        </select>
+    </form>
+
+    <!-- id are identifiers, its unique -->
+    <!-- class is used for making same properties, multiple tags can have same class -->
+
+    <!-- . is for class and # is for id -->
+
+    <!-- &pound; and &copy; are entities,  used for writing special character, there are more! -->
+
+    <div class="container">
+        <p>&pound; 25</p>
+        <p>&copy; copyright</p>
+    </div>
+
+    <!-- semantic element, for seo -->
+
+    <!-- https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html -->
+
+</body>
+</html>
