@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Concepts</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorum odio dolor necessitatibus delectus.</p>
+        </div>
+    </div>
+</body>
+<!-- usually JS Code is written after the body -->
+<script>
+    // let is used to declare variables that can be reassigned a new value, while const is used to declare variables whose values cannot be changed after they are assigned.
+
+    // variables declared with var are accessible throughout the entire function, while variables declared with let are only accessible within the block where they were declared
+
+
+    // console.log('Hello World');
+    // var name = 'Ruchi';
+    // var temp = `${name} is a 'nice' person`;
+    // console.log(temp);
+    alert('This is a message');
+
+    // The prompt() method returns the input value if the user clicks "OK". If the user clicks "cancel" the method returns null
+    let name = prompt("What is your name?", "Guest");
+    console.log(name);
+    // Confirm in JS
+    let deletePost = confirm("Do you really want to delete this post?");
+        
+        // console.log(deletePost);
+        if(deletePost){
+            // Code to delete the post
+            console.log("Your post has been deleted successfully");
+        }
+        else{
+            // Code to cancel deletion of the post
+            console.log("Your post has not been deleted");
+        }
+        let employee = {
+        name: "Harry",
+        salary: 2,
+        channel: "CWH"
+    }
+
+    // Use this loop to iterate over objects in JavaScript
+    for(key in employee){
+        console.log(`The ${key} of employee is ${employee[key]}`);
+    }
+
+    // If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelector()  method.
+
+    // If we want to find all the elements with same class name, use getElementsByClassName()
+
+    // By writing getElementById, we can target the HTML through its id
+
+</script>
+</html>
